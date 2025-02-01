@@ -14,7 +14,8 @@
     "react-dom": "^18.2.0",
     "axios": "^1.6.2",
     "framer-motion": "^10.16.4",
-    "react-confetti": "^6.1.0"
+    "react-confetti": "^6.1.0",
+     "lucide-react": "^0.328.0"
   },
   "devDependencies": {
     "@eslint/js": "^8.55.0",
