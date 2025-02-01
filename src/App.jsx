@@ -9,7 +9,7 @@ function App() {
   const [quizData, setQuizData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [gameState, setGameState] = useState('start'); // start, playing, end
+  const [gameState, setGameState] = useState('start'); 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [correctAnswers, setCorrectAnswers] = useState(0);
