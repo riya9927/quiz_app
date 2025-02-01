@@ -191,7 +191,7 @@ const App = () => {
     setScore(0);
     setTimer(30);
     setSelectedAnswer(null);
-    fetchQuizData(); // Refetch questions on retry
+    fetchQuizData(); 
   };
 
   if (loading) {
