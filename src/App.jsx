@@ -108,12 +108,12 @@
 // }
 
 // export default App;
-
 import React, { useState, useEffect } from 'react';
 import Question from './components/Question';
 import QuizStart from './components/QuizStart';
 import QuizSummary from './components/QuizSummary';
-import { Alert, AlertDescription } from '@/components/ui/alert';
+import { Card, CardContent } from '@/components/ui/card';
+import { XCircle } from 'lucide-react';
 
 const App = () => {
   const [quizData, setQuizData] = useState(null);
@@ -191,17 +191,38 @@ const App = () => {
     setScore(0);
     setTimer(30);
     setSelectedAnswer(null);
+    fetchQuizData(); // Refetch questions on retry
   };
 
   if (loading) {
-    return <div className="text-center mt-8">Loading quiz...</div>;
+    return (
+      <Card className="w-full max-w-2xl mx-auto mt-8">
+        <CardContent className="p-6">
+          <div className="text-center">
+            <div className="animate-spin h-8 w-8 border-4 border-blue-500 border-t-transparent rounded-full mx-auto mb-4"></div>
+            <p>Loading quiz questions...</p>
+          </div>
+        </CardContent>
+      </Card>
+    );
   }
 
   if (error) {
     return (
-      <Alert variant="destructive" className="w-full max-w-2xl mx-auto mt-8">
-        <AlertDescription>{error}</AlertDescription>
-      </Alert>
+      <Card className="w-full max-w-2xl mx-auto mt-8 border-red-200">
+        <CardContent className="p-6">
+          <div className="text-center text-red-600 space-y-4">
+            <XCircle className="h-8 w-8 mx-auto" />
+            <p className="font-semibold">{error}</p>
+            <button 
+              onClick={fetchQuizData}
+              className="text-blue-500 hover:text-blue-700 underline"
+            >
+              Try Again
+            </button>
+          </div>
+        </CardContent>
+      </Card>
     );
   }
 
