@@ -160,7 +160,6 @@ const App = () => {
   const [timer, setTimer] = useState(30);
   const [quizStarted, setQuizStarted] = useState(false);
 
-  // Fetch quiz data
   useEffect(() => {
     fetchQuizData();
   }, []);
@@ -170,10 +169,8 @@ const App = () => {
       setLoading(true);
       setError(null);
 
-      // Using a CORS proxy to fix fetch issues (remove if not needed)
-      const response = await fetch(
-        "https://cors-anywhere.herokuapp.com/https://api.jsonserve.com/Uw5CrX"
-      );
+      const response = await fetch('https://api.jsonserve.com/Uw5CrX');
+
 
       if (!response.ok) {
         throw new Error("Failed to fetch quiz data");
@@ -188,7 +185,6 @@ const App = () => {
     }
   };
 
-  // Timer logic
   useEffect(() => {
     let interval;
     if (quizStarted && !showResults && timer > 0) {
