@@ -169,7 +169,7 @@ const App = () => {
       setLoading(true);
       setError(null);
 
-      const response = await fetch('https://api.jsonserve.com/Uw5CrX');
+const response = await fetch("https://cors-anywhere.herokuapp.com/https://api.jsonserve.com/Uw5CrX");
 
 
       if (!response.ok) {
