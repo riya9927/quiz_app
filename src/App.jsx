@@ -112,7 +112,7 @@ import React, { useState, useEffect } from 'react';
 import Question from './components/Question';
 import QuizStart from './components/QuizStart';
 import QuizSummary from './components/QuizSummary';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from './components/ui/card';
 import { XCircle } from 'lucide-react';
 
 const App = () => {
