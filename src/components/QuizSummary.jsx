@@ -48,9 +48,9 @@
 // }
 
 import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Progress } from '@/components/ui/progress';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
+import { Button } from '../components/ui/button'
+import { Progress } from '../components/ui/progress'
 import { Trophy } from 'lucide-react';
 
 const QuizSummary = ({ score, totalQuestions, onRetry }) => {
