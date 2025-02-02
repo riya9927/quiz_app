@@ -8,7 +8,6 @@ const Button = React.forwardRef(({ className, variant = "default", ...props }, r
     secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
     outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground"
   }
-
   return (
     <button
       ref={ref}
