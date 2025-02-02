@@ -8,9 +8,6 @@ A dynamic and interactive quiz application built with React and Tailwind CSS, fe
 - 🎯 Dynamic scoring system based on response time
 - 📱 Responsive design
 - 🎨 Modern UI with shadcn/ui components
-- 🌓 Light/Dark mode support
-- 📊 Progress tracking
-- 📈 Score summary with performance feedback
 
 ## Scoring System
 
@@ -24,12 +21,6 @@ A dynamic and interactive quiz application built with React and Tailwind CSS, fe
 - Tailwind CSS
 - Lucide React (for icons)
 - Vite (build tool)
-
-## Prerequisites
-
-Before you begin, ensure you have installed:
-- Node.js (version 14 or higher)
-- npm (usually comes with Node.js)
 
 ## Installation
 
@@ -111,11 +102,6 @@ No environment variables are required for basic setup.
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
@@ -123,6 +109,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Lucide React for beautiful icons
 - Tailwind CSS for styling utilities
 
-## Support
 
-For support, please open an issue in the repository or contact the maintainers.
